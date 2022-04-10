@@ -1,0 +1,13 @@
+# Autor: Danilo Ribeiro Pinto
+# Data de criação: 08/04/2022
+# Data de atualização: 08/04/2022
+# Versão: 1.0
+# Testado na versão do Ubuntu Server 20.04 LTS x64
+# Testado na versão do Apache Guacamole 1.3.0 e 1.4.0
+# Versão do Tomcat 9.0.x
+
+# Parâmetros de inicialização padrão do JAVA do Tomcat9
+JAVA_OPTS="-Djava.awt.headless=true -XX:+UseG1GC"
+
+# Definição/Configuração do WWEBAPP do Apache Guacamole
+GUACAMOLE_HOME=/etc/guacamole

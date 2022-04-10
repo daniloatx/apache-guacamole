@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+# Autor: Danilo Ribeiro Pinto
+# Data de criação: 08/04/2022
+# Data de atualização: 08/04/2022
+# Versão: 1.0
+# Testado na versão do Ubuntu Server 20.04 LTS x64
+# Testado na versão do Apache Guacamole 1.3.0 e 1.4.0
+# Versão do Tomcat 9.0.x
+-->
+<tomcat-users xmlns="http://tomcat.apache.org/xml"
+              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+              xsi:schemaLocation="http://tomcat.apache.org/xml tomcat-users.xsd"
+              version="1.0">
+	<!-- Configuração dos Papéis (Roles) e Usuário/Senha do administrador do Apache Tomcat 9 -->
+	<role rolename="manager-gui"/>
+	<role rolename="manager"/>
+	<role rolename="admin-gui"/>
+	<role rolename="admin"/>
+	<role rolename="tomcat"/>
+	<role rolename="role1"/>
+	<user username="admin" password="d@r2022" roles="manager-gui,manager,admin-gui,admin,tomcat,role1"/>
+</tomcat-users>
